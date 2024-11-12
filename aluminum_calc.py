@@ -13,7 +13,7 @@ def main():
 
     cube = width * length * height
     weight = 2.7 * cube
-    can_total = round((weight / 13.5), 3)
-    st.write(f"There should be roughly {can_total} aluminum cans in the cube")
+    can_total = weight / 13.5
+    st.write(f"There should be roughly {round(can_total, 3)} aluminum cans in the cube")
 config()
 main()
