@@ -13,7 +13,8 @@ def main():
 
     cube = width * length * height
     weight = 2.7 * cube
-    can_total = weight / 13.5
-    st.write(f"There should be roughly {round(can_total, 3)} aluminum cans in the cube")
+    can_low = weight / 14
+    can_high = weight / 13.5
+    st.write(f"There should be between {round(can_low, 3)} and {round(can_high, 3}} aluminum cans in the cube")
 config()
 main()
