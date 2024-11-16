@@ -12,11 +12,13 @@ def main():
     height = st.number_input("What is the height of the cube?")
 
     cube = width * length * height
-    # weight = 2.7 * cube
-    weight = 118
+    weight = 2.7 * cube
     can_low = weight / 14.5
     can_high = weight / 13.5
+    acan_low = 118 / 14.5
+    acan_high = 118 / 13.5
     st.write(f"There should be between {round(can_low, 2)} and {round(can_high, 2)} aluminum cans in the cube")
+    st.write(f"Actually, there should be between {round(acan_low, 2)} and {round(acan_high, 2)} aluminum cans in the cube")
     st.write(f"The weight should be around {round(weight, 2)}")
 config()
 main()
